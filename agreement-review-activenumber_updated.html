@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+
+    <title>NCRR</title>
+</head>
+
+<body class="review-page">
+    <div class="canvas">
+        <header class="pb-0 bg-dark">
+            <nav class="navbar navbar-dark navbar-expand-lg p-0">
+                <div class="container-fluid">
+                    <a href="index.html" class="brand navbar-brand"><img src="images/logo.png" alt="NCRR"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link px-4" href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link px-4" href="setting.html">Settings</a>
+                            </li>
+                            <li class="nav-item position-relative">
+                                <a href="#" class="close text-white position-absolute"><small><i
+                                            class="fal fa-times-circle"></i></small></a>
+                                <a class="nav-link active px-4" href="#">Draft Agreement for #AP123458</a>
+                            </li>
+                        </ul>
+                        <div class="" id="navbarSupportedContent">
+                            <ul class="nav ms-auto align-items-center">
+                                <li class="nav-item">
+                                <li class="nav-item"><a class="nav-link help-toggle text-white" href="#">Help <i
+                                            class="fa fa-life-ring" aria-hidden="true"></i></a></li>
+                                </li>
+                                <li class="nav-item ">
+                                    <div class="dropdown">
+                                        <a class="nav-link  text-white" href="#" id="notification"
+                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">Notification <i class="fa fa-bell"></i></a>
+                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-right p-4 notification-drop"
+                                            aria-labelledby="notification" data-popper-placement="bottom-end">
+                                            <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+                                                <p class="mb-0 fs-4 fw-bold">All caught up!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <!--<a class="nav-link text-white" href="#" id="navbarDropdown" role="button" aria-expanded="false"> <small class="d-block"></small></a>-->
+                                        <a id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true"
+                                            class="nav-link text-white text-end d-flex align-items-center"><span>Justin
+                                                Madigan <small class="d-block">HNTB Representative</small></span> <span
+                                                class="ms-2"><i class="fal fa-chevron-down"></i></span></a>
+                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-right p-4"
+                                            aria-labelledby="dropdownMenuButton" data-popper-placement="bottom-end">
+                                            <div class="row border-bottom py-2">
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">Cecilia Chapman</small>
+                                                    <label>Applicant’s Primary Contact</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">Role</small>
+                                                    <label>Applicant’s User</label>
+                                                </div>
+                                            </div>
+                                            <div class="row border-bottom py-2">
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">Email</small>
+                                                    <label>cecilia@gmail.com</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">Phone</small>
+                                                    <label>(257) 563-7401</label>
+                                                </div>
+                                            </div>
+                                            <div class="row py-2">
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">Street Address</small>
+                                                    <label></la>Ap #867-859 Sit Rd.</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">City</small>
+                                                    <label>New York</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">State</small>
+                                                    <label>New York</label>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <small class="text-muted d-block">Zip</small>
+                                                    <label>39531</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <form class="pb-4">
+            <div class="border-bottom mb-4 bg-white">
+                <div class="container">
+                    <div class="">
+                        <ul class="steps">
+                            <li class="step step--complete step--active">
+                                <span class="step__icon"><i class="fal fa-check"></i></span>
+                                <a href="applicant-view.html" class="step__label">Applicant Review</a>
+                            </li>
+                            <li class="step step--complete step--active">
+                                <span class="step__icon"><i class="fal fa-check"></i></span>
+                                <a href="initial-review.html" class="step__label">Application Review</a>
+                            </li>
+                            <li class="step step--complete step--active">
+                                <span class="step__icon"><i class="fal fa-check"></i></span>
+                                <a href="engineering-review.html" class="step__label">Engineering review</a>
+                            </li>
+                            <li class="step step--incomplete step--active">
+                                <span class="step__icon"></span>
+                                <a href="agreement-review.html" class="step__label">Draft Agreement</a>
+                            </li>
+                            <li class="step step--incomplete step--inactive">
+                                <span class="step__icon"></span>
+                                <a href="compile-license-agreement.html" class="step__label">Compile Agreement</a>
+                            </li>
+                            <li class="step step--incomplete step--inactive">
+                                <span class="step__icon"></span>
+                                <a href="final-release.html" class="step__label">Final Release</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <!--<div class="pt-5">
+                            <ul class="steps">
+                                <li class="step step--incomplete step--active">
+                                <span class="step__icon"></span>
+                                <a href="compile-license-agreement.html" class="step__label">license agreement</a>
+                                </li>
+                                <li class="step step--incomplete step--inactive">
+                                <span class="step__icon"></span>
+                                <a href="compile-license-agreement-ncrr.html" class="step__label">NCRR validation</a>
+                                </li>
+                                <li class="step step--incomplete step--inactive">
+                                <span class="step__icon"></span>
+                                <a href="compile-license-agreement-VP-Engg.html" class="step__label">VP-Engg. signature NCRR</a>
+                                </li>
+                                <li class="step step--incomplete step--inactive">
+                                    <span class="step__icon"></span>
+                                    <a href="compile-license-agreement-ns.html" class="step__label">Norfolk Southern signature</a>
+                                </li>
+                                <li class="step step--incomplete step--inactive">
+                                    <span class="step__icon"></span>
+                                    <a href="compile-license-agreement-hntb.html" class="step__label">HNTB final release</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <div id="files-upload" class="">
+
+                            <div class="card mb-4 position-relative comment-card">
+                                <div class="card-header  border-bottom">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2 class="mb-0">Application Sign</h2>
+                                        <small class="text-muted">By Applicant</small>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <div class="mb-2">
+                                            <label class="text-muted d-block form-label d-block">Are You The Signing
+                                                Authority ?</label>
+                                            <!--<button class="btn-link btn comment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#comment11" aria-expanded="false" aria-controls="collapseExample">
+                                                <i class="far fa-comment-dots"></i>
+                                            </button>-->
+                                            <script>
+                                                function show1() {
+                                                    document.getElementById('div1').style.display = 'none';
+                                                    document.getElementById('footerSign').style.display = 'block';
+                                                }
+                                                function show2() {
+                                                    document.getElementById('div1').style.display = 'block';
+                                                    document.getElementById('footerSign').style.display = 'none';
+                                                }
+                                            </script>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" onclick="show1()" type="radio"
+                                                        name="flexRadioDefault" id="Signedyes">
+                                                    <label class="form-check-label" for="Signedyes">
+                                                        Yes
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ms-4">
+                                                    <input class="form-check-input" onclick="show2()" type="radio"
+                                                        name="flexRadioDefault" id="signedno" checked>
+                                                    <label class="form-check-label" for="signedno">
+                                                        No
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--<span class="text d-block mb-2">xyz.pdf</span>-->
+                                        <div class="card bg-secondary border-0">
+                                            <div id="div1" class="card-body p-3">
+                                                <div>
+                                                    <style>
+                                                        #hidden_div2 {
+                                                            display: none;
+                                                        }
+                                                    </style>
+                                                    <script>
+                                                        function showDiv(select) {
+                                                            if (select.value == 1 || select.value == 0 || select.value == 2) {
+                                                                document.getElementById('hidden_div').style.display = "block";
+                                                                document.getElementById('hidden_div2').style.display = "none";
+                                                            }
+                                                            if (select.value == 3) {
+                                                                document.getElementById('hidden_div2').style.display = "block";
+                                                                document.getElementById('hidden_div').style.display = "none";
+                                                            }
+                                                        } 
+                                                    </script>
+                                                    <div class="input-group" role="group">
+                                                        <select class="form-select" id="search-select"
+                                                            onchange="showDiv(this)" aria-label="Default select example">
+                                                            <option selected="selected">Select for Signature</option>
+                                                            <option value="0">Primary Contact</option>
+                                                            <option value="1">Owner Representative</option>
+                                                            <option value="2">Engineering Consultant</option>
+                                                            <option value="3">Add Contact</option>
+                                                        </select>
+                                                        <div id="hidden_div" class="dropdown-content-bond">
+                                                            <button type="button" class="btn btn-success"
+                                                                style="border-radius: 0 6px 6px 0; height: fit-content; padding-bottom: 0.7rem !important; padding-top: 0.75rem !important;">
+                                                                Send
+                                                            </button>
+                                                        </div>
+                                                        <div id="hidden_div2" class="dropdown-content-bond">
+                                                            <button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#staticBackdrop22" class="btn btn-success"
+                                                                style="border-radius: 0 6px 6px 0; height: fit-content; padding-bottom: 0.7rem !important; padding-top: 0.75rem !important;">
+                                                                Add
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <!-- <script>
+                                    function sign() {
+                                        document.getElementById('signDocu').style.display = "none";
+                                        document.getElementById('signbuttons').style.display = "block";
+                                    }
+                                </script> -->
+                                <style>
+                                    #footerSign{
+                                        display: none;
+                                    }
+                                </style>
+                                <div class="card-footer justify-content-center bg-primary" id="footerSign">
+                                   <div id="signDocu">
+                                    <a href="" class="d-block text-white">Sign
+                                        <i class="fal fa-chevron-right ms-2"></i></a>
+                                   </div>
+                                </div>
+                                </div>
+                                <div class="modal fade" id="staticBackdrop22" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <label for="">Add Contact</label>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label for="name" class="form-label">Name</label>
+                                                <input type="name" class="form-control mb-3" id="email"
+                                                    placeholder="Enter your name">
+                                                <label for="email" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Enter Your Email">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <style>
+                                    /* .dropdown-content-bond {
+                                                            display: none;
+                                                        } */
+
+                                    .modal-backdrop.show {
+                                        display: none;
+                                    }
+
+                                    .form-select:focus {
+                                        border: 1px solid #ced4da;
+                                        box-shadow: none;
+                                    }
+                                </style>
+
+                                <div class="card mb-4 position-relative comment-card">
+                                    <div class="card-header  border-bottom">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h2 class="mb-0">Agreement Generated</h2>
+                                            <small class="text-muted">By HNTB</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <div class="card bg-secondary border-0 mb-3">
+                                                <div class="card-body p-3">
+                                                    <div>
+                                                        <a href="#" class="btn btn-sm btn-success">Download Agreement</a>
+                                                        <a href="#" class="btn btn-sm btn-link">View</a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <label class="text-muted d-block form-label">Uploaded Agreement</label>
+                                                <!--<button class="btn-link btn comment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#comment11" aria-expanded="false" aria-controls="collapseExample">
+                                                <i class="far fa-comment-dots"></i>
+                                            </button>-->
+                                                <button type="button"
+                                                    class="btn-outline-dark btn-sm btn text-dark comment-btn position-relative"
+                                                    data-bs-toggle="modal" data-bs-target="#comment-modal">
+                                                    Start New Comment
+                                                </button>
+                                            </div>
+
+                                            <!--<span class="text d-block mb-2">xyz.pdf</span>-->
+                                            <div class="card bg-secondary border-0">
+                                                <div class="card-body p-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="flex-shrink-0">
+                                                            <i class="fal fa-file-pdf"></i>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            xyz
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <a href="#" class="btn btn-link">View</a>
+                                                            <a href="#" class="btn btn-link">Download</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="text-muted d-block form-label">Enter License Fee</label>
+                                            <div class="card bg-secondary border-0">
+                                                <div class="card-body p-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="flex-grow-1">
+                                                            $200
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--<div class="row msg-box">
+                                        <div class="col-md-12">
+                                            <div class="collapse" id="comment11" style="">
+                                                <div class="card chat-window bg-secondary mt-2">
+                                                    <div class="card-header bg-transparent">
+                                                        <div class="d-flex justify-content-between">
+                                                            <h3 class="panel-title m-0">Comments</h3>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="position-relative w-100 border">     
+                                                            <textarea class="form-control comment-box w-100" rows="4" aria-label="With textarea"></textarea>
+                                                            <div class="text-option bg-secondary w-100 py-2">
+                                                                <div class="d-flex justify-content-between">
+                                                                    <ul class="d-flex no-list mb-0">
+                                                                        <li>
+                                                                            <a class="text-muted" href="#"><i class="fas fa-bold"></i></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="text-muted" href="#"><i class="fas fa-italic"></i></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="text-muted" href="#"><i class="fas fa-strikethrough"></i></a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a class="text-muted" href="#"><i class="fas fa-underline"></i></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="send">
+                                                                        <a class="text-muted" href="#"><i class="fas fa-paper-plane"></i></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer bg-transparent position-relative comment-file">
+                                                        <div class="d-flex justify-content-between ">
+                                                            <p class="text-muted m-0"><small>Comment Files</small></p>
+                                                        </div>   
+                                                        <div class="up-btn-col">
+                                                            <input class="hide-input" type="file" id="T7" placeholder="Upload multiple files if needed" multiple>
+                                                            <a href="#" class="btn upload-btn btn-outline-primary sm-btn"><small>Upload Files</small></a>
+                                                        </div>                                             
+                                                        <div id="T7-list" class="card d-flex flex-wrap flex-row  bg-white border-0 mt-4 mb-3"></div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   -->
+                                    </div>
+                                    <div class="card-footer py-0 justify-content-center bg-success">
+                                        <a href="#" class="d-block text-white btn disabled py-4 px-0" tabindex="-1"
+                                            role="button" aria-disabled="true">
+                                            <span class="d-flex justify-content-between align-items-center">
+                                                <span><i class="fal fa-check"></i> Uploaded and Sent to Norfolk Southern
+                                                </span>
+                                                <span>By HNTB on <small> 03/05/2020</small></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card mb-4  comment-card border-primary shadow ">
+                                    <div class="card-header  border-bottom">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h2 class="mb-0">Agreement Review</h2>
+                                            <small class="text-muted">For Norfolk Southern</small>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-0">
+                                            <label class="text-muted d-block  form-label">Enter Activity Number</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="card-footer justify-content-center bg-primary">
+                                        <a href="agreement-review-final.html" class="d-block text-white">Send to NCRR <i
+                                                class="fal fa-chevron-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+
+    <div class="modal fade comment-modal" id="comment-modal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered mx-h-100 modal-dialog-scrollable">
+            <div class="modal-content h-100">
+                <div class="modal-body p-0">
+                    <div class="container-fluid h-100 p-0">
+                        <div class="row h-100 m-0">
+                            <div class="col-md-5 h-100 p-0">
+                                <div class="card-header px-5">
+                                    <h3 class="m-0">For a transverse crossing under the tracks</h3>
+                                </div>
+                                <div class="card  border-0">
+                                    <div class="card-body">
+                                        <div class="container-fluid p-0">
+                                            <div class="row">
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="" class="form-label">Railroad Line</label>
+                                                    <p class="m-0">Mainline</p>
+                                                </div>
+                                                <div class="col-md-8 mb-3">
+                                                    <label for="" class="form-label">Railroad Milepost
+                                                        Reference:</label>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <p class="m-0">284 <span class="">MP</span></p>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <p class="m-0">375 <span class="">Feet</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="emailHelp" class="form-text mb-3"><i
+                                                    class="fal fa-hand-point-right"></i> Use the next lowest whole
+                                                milepost adjacent to the project location + feet in the direction of
+                                                increasing milepost to the project location.<br>
+                                                <i>Mainline – Increasing milepost from Greensboro (MP 284) to Charlotte
+                                                    (MP 375)<br>
+                                                    H-Line – Increasing milepost from Greensboro (MP H-0) to Goldsboro
+                                                    (MP H-130) <br>
+                                                    EC-Line – Increasing milepost from Goldsboro (MP EC-0) to Morehead
+                                                    City (MP EC-94)</i>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="" class="form-label">Total Length of Crossing on the
+                                                        NCRR Corridor:</label>
+                                                    <p class="m-0">375 <span class="">Feet</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="" class="form-label">Number of tracks to be
+                                                        crossed:</label>
+                                                    <p class="m-0">2</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="" class="form-label">Angle of crossing:</label>
+                                                    <p class="m-0">3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 h-100 bg-secondary p-0">
+                                <div class="row msg-box h-100 m-0">
+                                    <div class="col-md-12 p-0">
+                                        <div class="card border-0 rounded-0 chat-window bg-secondary  h-100">
+                                            <div class="card-header bg-transparent">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h3 class="panel-title m-0">New Comments</h3>
+                                                    <!--<button type="button" class="btn-close text-blue sm-btn" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center h-100">
+                                                <a href="#" class="btn btn-outline-primary">Start Comment</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="resolve1">Are Your Sure?</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-0">This section is not reversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Resolve</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/custom.css" media="screen">
+<link rel="stylesheet" href="css/font.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/jquery.MultiFile.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+
+</html>
