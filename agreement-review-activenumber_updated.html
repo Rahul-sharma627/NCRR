@@ -184,9 +184,13 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
+                                    <div class="alert-danger alert fs-5 text-center mb-5">
+                                        <p class="mb-0">Waiting for <Name> to digitally sign this agreement.</p>
+                                    </div>
                                     <div class="mb-3">
                                         <div class="mb-2">
-                                            <label class="text-muted d-block form-label d-block">Who is authorized to sign the application ?</label>
+                                            <label class="text-muted d-block form-label d-block">Who is authorized to
+                                                sign the application ?</label>
                                             <!--<button class="btn-link btn comment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#comment11" aria-expanded="false" aria-controls="collapseExample">
                                                 <i class="far fa-comment-dots"></i>
                                             </button>-->
@@ -212,7 +216,7 @@
                                                     <input class="form-check-input" onclick="show2()" type="radio"
                                                         name="flexRadioDefault" id="signedno" checked>
                                                     <label class="form-check-label" for="signedno">
-                                                       Others
+                                                        Others
                                                     </label>
                                                 </div>
                                             </div>
@@ -241,7 +245,8 @@
                                                     </script>
                                                     <div class="input-group" role="group">
                                                         <select class="form-select" id="search-select"
-                                                            onchange="showDiv(this)" aria-label="Default select example">
+                                                            onchange="showDiv(this)"
+                                                            aria-label="Default select example">
                                                             <option selected="selected">Select for Signature</option>
                                                             <option value="0">Primary Contact</option>
                                                             <option value="1">Owner Representative</option>
@@ -256,21 +261,22 @@
                                                         </div>
                                                         <div id="hidden_div2" class="dropdown-content-bond">
                                                             <button type="button" data-bs-toggle="modal"
-                                                                data-bs-target="#staticBackdrop22" class="btn btn-success"
+                                                                data-bs-target="#staticBackdrop22"
+                                                                class="btn btn-success"
                                                                 style="border-radius: 0 6px 6px 0; height: fit-content; padding-bottom: 0.7rem !important; padding-top: 0.75rem !important;">
                                                                 Add
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </div>
-                                                
+
                                             </div>
-                                            
+
                                         </div>
-                                        
+
                                     </div>
-                                    
+
                                 </div>
                                 <!-- <script>
                                     function sign() {
@@ -279,121 +285,121 @@
                                     }
                                 </script> -->
                                 <style>
-                                    #footerSign{
+                                    #footerSign {
                                         display: none;
                                     }
                                 </style>
                                 <div class="card-footer justify-content-center bg-primary" id="footerSign">
-                                   <div id="signDocu">
-                                    <a href="" class="d-block text-white">Sign
-                                        <i class="fal fa-chevron-right ms-2"></i></a>
-                                   </div>
+                                    <div id="signDocu">
+                                        <a href="" class="d-block text-white">Sign
+                                            <i class="fal fa-chevron-right ms-2"></i></a>
+                                    </div>
                                 </div>
-                                </div>
-                                <div class="modal fade" id="staticBackdrop22" data-bs-backdrop="static"
-                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                    aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <label for="">Add Contact</label>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <label for="name" class="form-label">Name</label>
-                                                <input type="name" class="form-control mb-3" id="email"
-                                                    placeholder="Enter Name">
-                                                <label for="email" class="form-label">Email address</label>
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="Enter Email Address">
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-success">Send</button>
-                                            </div>
+                            </div>
+                            <div class="modal fade" id="staticBackdrop22" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <label for="">Add Contact</label>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="name" class="form-control mb-3" id="email"
+                                                placeholder="Enter Name">
+                                            <label for="email" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter Email Address">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-success">Send</button>
                                         </div>
                                     </div>
                                 </div>
-                                <style>
-                                    /* .dropdown-content-bond {
+                            </div>
+                            <style>
+                                /* .dropdown-content-bond {
                                                             display: none;
                                                         } */
 
-                                    .modal-backdrop.show {
-                                        display: none;
-                                    }
+                                .modal-backdrop.show {
+                                    display: none;
+                                }
 
-                                    .form-select:focus {
-                                        border: 1px solid #ced4da;
-                                        box-shadow: none;
-                                    }
-                                </style>
+                                .form-select:focus {
+                                    border: 1px solid #ced4da;
+                                    box-shadow: none;
+                                }
+                            </style>
 
-                                <div class="card mb-4 position-relative comment-card">
-                                    <div class="card-header  border-bottom">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h2 class="mb-0">Agreement Generated</h2>
-                                            <small class="text-muted">By HNTB</small>
-                                        </div>
+                            <div class="card mb-4 position-relative comment-card">
+                                <div class="card-header  border-bottom">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2 class="mb-0">Agreement Generated</h2>
+                                        <small class="text-muted">By HNTB</small>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="mb-3">
-                                            <div class="card bg-secondary border-0 mb-3">
-                                                <div class="card-body p-3">
-                                                    <div>
-                                                        <a href="#" class="btn btn-sm btn-success">Download Application</a>
-                                                        <a href="#" class="btn btn-sm btn-link">View</a>
-                                                    </div>
-                                                    
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <div class="card bg-secondary border-0 mb-3">
+                                            <div class="card-body p-3">
+                                                <div>
+                                                    <a href="#" class="btn btn-sm btn-success">Download Application</a>
+                                                    <a href="#" class="btn btn-sm btn-link">View</a>
                                                 </div>
-                                                
+
                                             </div>
-                                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                                <label class="text-muted d-block form-label mb-0">Uploaded Agreement</label>
-                                                <!--<button class="btn-link btn comment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#comment11" aria-expanded="false" aria-controls="collapseExample">
+
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <label class="text-muted d-block form-label mb-0">Uploaded Agreement</label>
+                                            <!--<button class="btn-link btn comment-btn" type="button" data-bs-toggle="collapse" data-bs-target="#comment11" aria-expanded="false" aria-controls="collapseExample">
                                                 <i class="far fa-comment-dots"></i>
                                             </button>-->
-                                                <button type="button"
-                                                    class="btn-outline-dark btn-sm btn text-dark comment-btn position-relative"
-                                                    data-bs-toggle="modal" data-bs-target="#comment-modal">
-                                                    Start New Comment
-                                                </button>
-                                            </div>
+                                            <button type="button"
+                                                class="btn-outline-dark btn-sm btn text-dark comment-btn position-relative"
+                                                data-bs-toggle="modal" data-bs-target="#comment-modal">
+                                                Start New Comment
+                                            </button>
+                                        </div>
 
-                                            <!--<span class="text d-block mb-2">xyz.pdf</span>-->
-                                            <div class="card bg-secondary border-0">
-                                                <div class="card-body p-3">
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0">
-                                                            <i class="fal fa-file-pdf"></i>
-                                                        </div>
-                                                        <div class="flex-grow-1 ms-3">
-                                                            xyz
-                                                        </div>
-                                                        <div class="flex-shrink-0">
-                                                            <a href="#" class="btn btn-link">View</a>
-                                                            <a href="#" class="btn btn-link">Download</a>
-                                                        </div>
+                                        <!--<span class="text d-block mb-2">xyz.pdf</span>-->
+                                        <div class="card bg-secondary border-0">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <i class="fal fa-file-pdf"></i>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        xyz
+                                                    </div>
+                                                    <div class="flex-shrink-0">
+                                                        <a href="#" class="btn btn-link">View</a>
+                                                        <a href="#" class="btn btn-link">Download</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label class="text-muted d-block form-label">Enter License Fee</label>
-                                            <div class="card bg-secondary border-0">
-                                                <div class="card-body p-3">
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-grow-1">
-                                                            $200
-                                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="text-muted d-block form-label">Enter License Fee</label>
+                                        <div class="card bg-secondary border-0">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-grow-1">
+                                                        $200
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <!--<div class="row msg-box">
+                                    <!--<div class="row msg-box">
                                         <div class="col-md-12">
                                             <div class="collapse" id="comment11" style="">
                                                 <div class="card chat-window bg-secondary mt-2">
@@ -443,40 +449,40 @@
                                             </div>
                                         </div>
                                     </div>   -->
-                                    </div>
-                                    <div class="card-footer py-0 justify-content-center bg-success">
-                                        <a href="#" class="d-block text-white btn disabled py-4 px-0" tabindex="-1"
-                                            role="button" aria-disabled="true">
-                                            <span class="d-flex justify-content-between align-items-center">
-                                                <span><i class="fal fa-check"></i> Uploaded and Sent to Norfolk Southern
-                                                </span>
-                                                <span>By HNTB on <small> 03/05/2020</small></span>
+                                </div>
+                                <div class="card-footer py-0 justify-content-center bg-success">
+                                    <a href="#" class="d-block text-white btn disabled py-4 px-0" tabindex="-1"
+                                        role="button" aria-disabled="true">
+                                        <span class="d-flex justify-content-between align-items-center">
+                                            <span><i class="fal fa-check"></i> Uploaded and Sent to Norfolk Southern
                                             </span>
-                                        </a>
+                                            <span>By HNTB on <small> 03/05/2020</small></span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card mb-4  comment-card border-primary shadow ">
+                                <div class="card-header  border-bottom">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h2 class="mb-0">Agreement Review</h2>
+                                        <small class="text-muted">For Norfolk Southern</small>
                                     </div>
                                 </div>
-                                <div class="card mb-4  comment-card border-primary shadow ">
-                                    <div class="card-header  border-bottom">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <h2 class="mb-0">Agreement Review</h2>
-                                            <small class="text-muted">For Norfolk Southern</small>
-                                        </div>
+                                <div class="card-body">
+                                    <div class="mb-0">
+                                        <label class="text-muted d-block  form-label">Enter Activity Number</label>
+                                        <input type="text" class="form-control">
                                     </div>
-                                    <div class="card-body">
-                                        <div class="mb-0">
-                                            <label class="text-muted d-block  form-label">Enter Activity Number</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="card-footer justify-content-center bg-primary">
-                                        <a href="agreement-review-final.html" class="d-block text-white">Send to NCRR <i
-                                                class="fal fa-chevron-right ms-2"></i></a>
-                                    </div>
+                                </div>
+                                <div class="card-footer justify-content-center bg-primary">
+                                    <a href="agreement-review-final.html" class="d-block text-white">Send to NCRR <i
+                                            class="fal fa-chevron-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </form>
     </div>
 
